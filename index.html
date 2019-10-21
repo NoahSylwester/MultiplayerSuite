@@ -1,12 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Multiplayer</title>
-</head>
-<body>
-  
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Multiplayer Suite</title>
+  </head>
+  <body class="container">
+    <div class="row">
+      <div class="col-8 container">
+        <div class="row">
+          <h1 class="col-12">
+            GAMES ONLINE
+          </h1>
+        </div>
+        <div class="row">
+          <main class="col-12 game-area window">
+            
+          </main>
+        </div>
+        <div class="row">
+          <div class="col controls-area window">
+            <button id="rock-button" class="btn btn-lg btn-primary">Rock</button>
+            <button id="paper-button" class="btn btn-lg btn-primary">Paper</button>
+            <button id="scissors-button" class="btn btn-lg btn-primary">Scissors</button>
+            <div id="scoreboard">
+              Player 1 wins: 0<br />Player 2 wins: 0
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-4 container">
+        <div class="row">
+          <h1 class="col-12">
+            CHAT
+          </h1>
+        </div>
+        <div class="row">
+          <div class="col-12 chat-area window"></div>
+        </div>
+        <div class="row">
+          <div class="col-12 message-area window">
+            <form>
+              <div class="form-group">
+                <label for="message-input">Chat</label>
+                <input type="text" class="form-control" id="message-input" placeholder="Enter message"></input>
+              </div>
+              <button type="submit" id="submit-button" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
 </body>
 </html>
