@@ -8,6 +8,7 @@ Rough pseudocode overview:
     - chat window
       + viewable on all or most screens
       + should persist until disconnect
+      + this can maybe be 'synced' rather than stored server-side
     - score display
       + game-specific scores, and macro scoreboard
       + macro board should be viewable always
@@ -48,6 +49,7 @@ Rough pseudocode overview:
           >> each player can move around
           >> point is to shoot the other first
             >>> maybe one-shot, or maybe hp?
+            >>> maybe attacks options? a grenade or something?
           >> player sprites will be mirrored with player movement for other's view
           (player one moves left, player one's sprite moves right one player two's
           view. Maybe two different data storages to save processing time?)
